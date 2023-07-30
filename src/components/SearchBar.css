@@ -43,3 +43,7 @@
 	margin: auto;
 	position: absolute;
 }
+
+.comboBox hr:last-child {
+	display: none;
+}
