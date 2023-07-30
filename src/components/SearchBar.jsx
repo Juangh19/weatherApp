@@ -35,9 +35,12 @@ export function SearchBar() {
 				{showCities && (
 					<ul>
 						{cities.map((city) => (
-							<li data-pos={`${city.lat},${city.lon}`} key={city.id}>
-								{city.name}, {city.country}
-							</li>
+							<>
+								<li data-pos={`${city.lat},${city.lon}`} key={city.id}>
+									{city.name}, {city.country}
+								</li>
+								<hr />
+							</>
 						))}
 					</ul>
 				)}
