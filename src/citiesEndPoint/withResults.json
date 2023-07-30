@@ -1,0 +1,47 @@
+[
+	{
+		"id": 2801268,
+		"name": "London",
+		"region": "City of London, Greater London",
+		"country": "United Kingdom",
+		"lat": 51.52,
+		"lon": -0.11,
+		"url": "london-city-of-london-greater-london-united-kingdom"
+	},
+	{
+		"id": 279381,
+		"name": "Londrina",
+		"region": "Parana",
+		"country": "Brazil",
+		"lat": -23.3,
+		"lon": -51.15,
+		"url": "londrina-parana-brazil"
+	},
+	{
+		"id": 1122627,
+		"name": "Londa",
+		"region": "Karnataka",
+		"country": "India",
+		"lat": 15.47,
+		"lon": 74.52,
+		"url": "londa-karnataka-india"
+	},
+	{
+		"id": 1313780,
+		"name": "Londiani",
+		"region": "Rift Valley",
+		"country": "Kenya",
+		"lat": -0.17,
+		"lon": 35.6,
+		"url": "londiani-rift-valley-kenya"
+	},
+	{
+		"id": 3254145,
+		"name": "Londres",
+		"region": "Jalisco",
+		"country": "Mexico",
+		"lat": 20.97,
+		"lon": -102.66,
+		"url": "londres-jalisco-mexico"
+	}
+]
