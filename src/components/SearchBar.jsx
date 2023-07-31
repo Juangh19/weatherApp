@@ -14,10 +14,6 @@ export function SearchBar() {
 		getCities({ search: newQuery });
 	};
 
-	const handleSearchClick = () => {
-		setShowCities(true);
-	};
-
 	return (
 		<>
 			<label htmlFor='opciones'>Select your city:</label>
@@ -29,21 +25,31 @@ export function SearchBar() {
 					placeholder='e.g. London, England'
 					onChange={handleChange}
 					value={search}
-					onClick={handleSearchClick}
+					style={
+						cities.length > 0 && showCities
+							? { borderRadius: '5px 5px 0 0' }
+							: { borderRadius: ' 5px' }
+					}
+					onBlur={() => {
+						setShowCities(false);
+					}}
+					onFocus={() => {
+						setShowCities(true);
+					}}
 				/>
-
-				{showCities && (
-					<ul>
-						{cities.map((city) => (
-							<>
-								<li data-pos={`${city.lat},${city.lon}`} key={city.id}>
-									{city.name}, {city.country}
-								</li>
-								<hr />
-							</>
-						))}
-					</ul>
-				)}
+				{showCities &&
+					(cities.length > 0 ? (
+						<ul>
+							{cities.map((city) => (
+								<>
+									<li data-pos={`${city.lat},${city.lon}`} key={city.id}>
+										{city.name}, {city.country}
+									</li>
+									<hr />
+								</>
+							))}
+						</ul>
+					) : null)}
 			</div>
 		</>
 	);

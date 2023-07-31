@@ -5,26 +5,32 @@
 }
 .city-selector {
 	padding: 8px;
-	border: 1px solid #555;
+	border: 1px solid rgba(86, 82, 121, 0.6);
 	border-radius: 5px;
+	width: 100%;
+	background-color: aliceblue;
+	color: #565279;
+	font-size: 1rem;
 }
 
 .comboBox {
 	position: relative;
-}
-
-.comboBox input {
-	width: 100%;
+	width: 80%;
+	max-width: 300px;
+	margin: auto;
 }
 
 .comboBox ul {
 	position: absolute;
-	background-color: #333;
+	background-color: aliceblue;
 	top: 100%;
 	width: 100%;
 	list-style: none;
 	padding: 0;
 	border-radius: 0 0 8px 8px;
+	border: 1px solid rgba(86, 82, 121, 0.6);
+	border-top: none;
+	color: #222;
 }
 
 .comboBox ul li {
@@ -33,7 +39,7 @@
 }
 
 .comboBox ul li:hover {
-	opacity: 0.6;
+	opacity: 0.5;
 	cursor: pointer;
 }
 

@@ -4,8 +4,8 @@ import { SearchBar } from './components/SearchBar';
 function App() {
 	return (
 		<main>
-			<h1>Weather App</h1>
 			<header>
+				<h1>Weather App</h1>
 				<SearchBar />
 			</header>
 		</main>

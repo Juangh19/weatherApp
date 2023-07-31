@@ -6,6 +6,8 @@
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
 	background-color: #242424;
+	background-image: url('./assets/1540134639.svg');
+	background-position: center 0;
 }
 
 *,
@@ -16,9 +18,21 @@
 }
 
 main {
-	margin: auto;
+	margin: 50px auto;
 	padding: 20px 0;
-	max-width: 60%;
-	min-height: 100vh;
+	width: 90%;
+	max-width: 768px;
+	min-height: 60vh;
 	text-align: center;
+	border-radius: 30px;
+	background-color: #878f70;
+	background-image: linear-gradient(
+		26deg,
+		#878f70 0%,
+		#749a78 46%,
+		#103358 100%
+	);
+	box-shadow: 2px 1px 10px 0 #222;
+
+	opacity: 0.92;
 }
