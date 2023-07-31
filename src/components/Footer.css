@@ -1,0 +1,38 @@
+.footer {
+	position: fixed;
+	left: 2rem;
+	bottom: 2rem;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 8px 24px;
+	border-radius: 32px;
+	opacity: 0.95;
+	backdrop-filter: blur(8px);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	align-items: center;
+}
+
+.footer a {
+	font-size: 14px;
+	color: #09f;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		position: fixed;
+		left: 0.5rem;
+		bottom: 0.5rem;
+		font-size: 12px;
+	}
+
+	.footer a {
+		font-size: 12px;
+		color: #09f;
+		opacity: 0.8;
+		text-decoration: none;
+	}
+}

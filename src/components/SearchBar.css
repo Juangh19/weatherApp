@@ -36,6 +36,7 @@
 .comboBox ul li {
 	padding: 10px 20px;
 	text-align: start;
+	border-bottom: 1px solid rgba(187, 187, 187, 0.5);
 }
 
 .comboBox ul li:hover {
@@ -43,13 +44,6 @@
 	cursor: pointer;
 }
 
-.comboBox hr {
-	border: 1px solid rgba(187, 187, 187, 0.2);
-	width: 100%;
-	margin: auto;
-	position: absolute;
-}
-
-.comboBox hr:last-child {
-	display: none;
+.comboBox ul li:last-child {
+	border-bottom: none;
 }

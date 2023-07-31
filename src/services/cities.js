@@ -1,7 +1,7 @@
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 export const searchCities = async ({ search }) => {
-	if (search === '') return null;
+	if (search.length < 3) return [];
 
 	try {
 		const response = await fetch(

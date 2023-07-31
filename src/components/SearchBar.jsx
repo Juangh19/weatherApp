@@ -11,6 +11,7 @@ export function SearchBar() {
 		const newQuery = e.target.value;
 		if (newQuery.startsWith(' ')) return;
 		setSearch(newQuery);
+
 		getCities({ search: newQuery });
 	};
 
@@ -41,12 +42,9 @@ export function SearchBar() {
 					(cities.length > 0 ? (
 						<ul>
 							{cities.map((city) => (
-								<>
-									<li data-pos={`${city.lat},${city.lon}`} key={city.id}>
-										{city.name}, {city.country}
-									</li>
-									<hr />
-								</>
+								<li data-pos={`${city.lat},${city.lon}`} key={city.id}>
+									{city.name}, {city.country}
+								</li>
 							))}
 						</ul>
 					) : null)}
