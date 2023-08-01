@@ -10,14 +10,8 @@ function App() {
 	useEffect(() => {
 		const storedCity = localStorage.getItem('city');
 
-		console.log(storedCity);
-
 		if (storedCity) {
-			console.log('si');
-			console.log(storedCity);
 			setSearchResults(storedCity);
-		} else {
-			console.log('no');
 		}
 	}, []);
 

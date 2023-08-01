@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useCityResult } from '../hooks/useCityResult';
 import { CurrentWeather } from './CurrentWeather';
 import { Forecast } from './Forecast';
@@ -9,11 +9,18 @@ export function Result({ result }) {
 	const { city, loading } = useCityResult({ pos: result });
 	const [tempUnit, setTempUnit] = useState('f');
 
+	useEffect(() => {
+		const storedTempUnit = localStorage.getItem('tempUnit');
+
+		if (storedTempUnit) {
+			setTempUnit(storedTempUnit);
+		}
+	}, []);
+
 	const handleTempUnit = (tempUnit) => {
 		setTempUnit(tempUnit);
+		localStorage.setItem('tempUnit', tempUnit);
 	};
-
-	console.log(loading);
 
 	return (
 		<div className='result'>

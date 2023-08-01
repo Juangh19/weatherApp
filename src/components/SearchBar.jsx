@@ -16,7 +16,6 @@ export function SearchBar({ onSearch }) {
 	};
 
 	const handleOptionClink = (option) => {
-		console.log(option.target.dataset.pos);
 		onSearch(option.target.dataset.pos);
 		localStorage.setItem('city', `${option.target.dataset.pos}`);
 		setShowCities(false);
