@@ -1,0 +1,33 @@
+.forecastCont {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.forecastCont > div {
+	padding: 20px;
+	background-color: #5c5d7f;
+	margin: 0 10px;
+	display: flex;
+	justify-content: space-around;
+	max-width: 220px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px 2px #575379;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.weather {
+	display: flex;
+	flex-direction: column;
+}
+
+.tempValues {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.weatherDescription {
+	flex-basis: 100%;
+}

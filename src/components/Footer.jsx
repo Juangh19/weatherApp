@@ -9,7 +9,15 @@ export function Footer() {
 					@juangh19
 				</a>
 			</h4>
-			<h5>Weather app with React ⚛️</h5>
+			<h5>
+				<a
+					href='https://github.com/Juangh19/weatherApp/'
+					target='_blank'
+					rel='noreferrer'
+				>
+					How i made this project? ⚛️
+				</a>
+			</h5>
 		</footer>
 	);
 }

@@ -12,13 +12,14 @@
 	flex-direction: column;
 	gap: 6px;
 	align-items: center;
+	opacity: 0.8;
 }
 
 .footer a {
 	font-size: 14px;
 	color: #09f;
 	opacity: 0.8;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -31,8 +32,5 @@
 
 	.footer a {
 		font-size: 12px;
-		color: #09f;
-		opacity: 0.8;
-		text-decoration: none;
 	}
 }

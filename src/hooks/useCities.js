@@ -16,5 +16,5 @@ export function useCities({ search }) {
 		}
 	}, []);
 
-	return { cities: cities, getCities };
+	return { cities: cities, getCities, setCities };
 }
