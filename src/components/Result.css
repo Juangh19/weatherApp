@@ -3,3 +3,12 @@ hr {
 	width: 90%;
 	border: 1px solid #ccc;
 }
+
+.loading {
+	width: 100px;
+	margin: 20px auto;
+}
+
+.loading img {
+	width: 100%;
+}
