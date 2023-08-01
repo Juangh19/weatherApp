@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const API_KEY = 'ae8f738e6bbe40709c1235018232907';
 
 export const searchCities = async ({ search }) => {
 	if (search.length < 3) return [];
